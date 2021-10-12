@@ -1,5 +1,12 @@
 .transaction-detail-item {
   color: $ui-4;
+  margin-bottom: 5px;
+
+  &:last-child {
+    border-top: 1px solid $ui-3;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
 
   &__row {
     display: flex;
