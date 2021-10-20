@@ -41,7 +41,6 @@ export default class ConfirmPageContainerContent extends Component {
     unapprovedTxCount: PropTypes.number,
     rejectNText: PropTypes.string,
     isFailedTransaction: PropTypes.bool,
-    onErrorMessageClick: PropTypes.func,
   };
 
   renderContent() {
@@ -97,7 +96,6 @@ export default class ConfirmPageContainerContent extends Component {
       origin,
       ethGasPriceWarning,
       isFailedTransaction,
-      onErrorMessageClick,
     } = this.props;
 
     return (
