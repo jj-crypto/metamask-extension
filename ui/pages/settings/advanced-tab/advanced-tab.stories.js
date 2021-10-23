@@ -15,7 +15,7 @@ export const AdvancedTabComponent = () => {
         setShowFiatConversionOnTestnetsPreference={() => undefined}
         setThreeBoxSyncingPermission={() => undefined}
         setIpfsGateway={() => undefined}
-        setLedgerLivePreference={() => undefined}
+        setLedgerTransportPreference={() => undefined}
         setDismissSeedBackUpReminder={() => undefined}
         setUseNonceField={() => undefined}
         setHexDataFeatureFlag={() => undefined}
