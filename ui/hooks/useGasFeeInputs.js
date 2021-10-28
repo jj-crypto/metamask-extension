@@ -6,6 +6,7 @@ import {
   GAS_RECOMMENDATIONS,
   GAS_ESTIMATE_TYPES,
   EDIT_GAS_MODES,
+  CUSTOM_GAS_ESTIMATE,
 } from '../../shared/constants/gas';
 import { multiplyCurrencies } from '../../shared/modules/conversion.utils';
 import {
@@ -194,7 +195,7 @@ export function useGasFeeInputs(
     transaction?.userFeeLevel || null,
   );
   const initialFeeParamsAreCustom =
-    initialMatchingEstimateLevel === 'custom' ||
+    initialMatchingEstimateLevel === CUSTOM_GAS_ESTIMATE ||
     initialMatchingEstimateLevel === null;
 
   // This hook keeps track of a few pieces of transitional state. It is
@@ -211,7 +212,7 @@ export function useGasFeeInputs(
       : null,
   );
   const [gasPriceHasBeenManuallySet, setGasPriceHasBeenManuallySet] = useState(
-    initialMatchingEstimateLevel === 'custom',
+    initialMatchingEstimateLevel === CUSTOM_GAS_ESTIMATE,
   );
   const [gasPrice, setGasPrice] = useState(
     initialGasPrice && initialFeeParamsAreCustom ? initialGasPrice : null,
@@ -431,7 +432,7 @@ export function useGasFeeInputs(
     gasEstimateType,
     estimatedGasFeeTimeBounds,
     onManualChange: () => {
-      setInternalEstimateToUse('custom');
+      setInternalEstimateToUse(CUSTOM_GAS_ESTIMATE);
       handleGasLimitOutOfBoundError();
       // Restore existing values
       setGasPrice(gasPriceToUse);
