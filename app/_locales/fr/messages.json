@@ -653,12 +653,6 @@
   "on": {
     "message": "Activé"
   },
-  "optionalBlockExplorerUrl": {
-    "message": "URL de l'explorateur de blocs (facultatif)"
-  },
-  "optionalCurrencySymbol": {
-    "message": "Symbole (facultatif)"
-  },
   "origin": {
     "message": "Origine"
   },

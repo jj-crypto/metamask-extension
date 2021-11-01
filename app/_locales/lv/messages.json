@@ -667,12 +667,6 @@
   "on": {
     "message": "Iesl."
   },
-  "optionalBlockExplorerUrl": {
-    "message": "Bloķēt Explorer URL (pēc izvēles)"
-  },
-  "optionalCurrencySymbol": {
-    "message": "Simbols (neobligāti)"
-  },
   "origin": {
     "message": "Avots"
   },

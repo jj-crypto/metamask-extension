@@ -647,9 +647,6 @@
   "on": {
     "message": "An"
   },
-  "optionalBlockExplorerUrl": {
-    "message": "Block-Explorer-URL (optional)"
-  },
   "origin": {
     "message": "Ursprung"
   },
